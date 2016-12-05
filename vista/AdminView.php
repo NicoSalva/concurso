@@ -22,7 +22,7 @@ class AdminView
   }
 
   function mostrar () {
-    $this->smarty->display('administracion.tpl');
+    $this->smarty->display('index.tpl');
   }
 
   function mostrarPaquetes($paquetes){
