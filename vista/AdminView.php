@@ -21,7 +21,8 @@ class AdminView
     $this->smarty->display('login.tpl');
   }
 
-  function mostrar () {
+  function mostrar ($usuario) {
+    $this->smarty->assign('usuario',$usuario);
     $this->smarty->display('index.tpl');
   }
 

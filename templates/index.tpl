@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>HOLA</title>
-  </head>
-  <body>
-    <h1>HOLAAAA</h1>
-
-  </body>
-</html>
+{include file="header.tpl" }
+{include file="body.tpl" }
+{include file="footer.tpl" }
