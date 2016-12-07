@@ -6,19 +6,10 @@
           <h1>Sistema Concurso Docente Facultad De Ciencias Veterinarias</h1>
         </header>
         <nav class="col-xs-12 col-md-12 navegadora">
-          <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href=# id="home">Home</a></li>
-            <li role="presentation"><a href=# id="servicios">Paquete de Servicios</a></li>
-            <li role="presentation"><a href=# id="presupuesto">Presupuesto</a></li>
-            <li role="presentation"><a href=# id="contacto">Contacto</a></li>
-            <li role="presentation"><a href=# id="somos">Quienes Somos</a></li>
-
-            <li role="presentation"><a href=# id="login">Ingresar</a></li>
-
-            <li role="presentation"><a href=# id="logout">Logout</a><span class="glyphicon glyphicon-user">{$usuario['email']}</span></li>
-
-            <li role="presentation"><a href=# id="admin">Administración</a></li>
-            
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
           </ul>
         </nav>
         <div class="col-xs-12 col-md-12" id="cargadorAjax">

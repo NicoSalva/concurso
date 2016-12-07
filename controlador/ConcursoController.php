@@ -14,8 +14,7 @@ class ConcursoController
   function __construct()
   {
     $this->vista=new ConcursoView();
-    $this->modelo=new DocenteModel();
-    $this->usuario=new UsuarioModel();
+    
   }
 
   function iniciar () {
