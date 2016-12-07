@@ -5,7 +5,7 @@ require_once ('modelo/ConcursoModel.php');
 require_once ('modelo/DocenteModel.php');
 require_once ('modelo/UsuarioModel.php');
 
-class AdminController
+class ConcursoController
 {
   private $vista;
   private $modelo;
@@ -19,7 +19,7 @@ class AdminController
   }
 
   function iniciar () {
-    $this->vista->mostrar($this->usuario);
+    $this->vista->mostrar();
   }
 
 

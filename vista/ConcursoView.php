@@ -10,7 +10,7 @@ class ConcursoView
     $this->smarty = new Smarty();
   }
 
-  function mostrar ($usuario) {
+  function mostrar () {
     //$this->smarty->assign('usuario',$usuario);
     $this->smarty->display('index.tpl');
   }

@@ -12,14 +12,13 @@
             <li role="presentation"><a href=# id="presupuesto">Presupuesto</a></li>
             <li role="presentation"><a href=# id="contacto">Contacto</a></li>
             <li role="presentation"><a href=# id="somos">Quienes Somos</a></li>
-            {if $usuario['fk_rol']==0}
+
             <li role="presentation"><a href=# id="login">Ingresar</a></li>
-            {else}
+
             <li role="presentation"><a href=# id="logout">Logout</a><span class="glyphicon glyphicon-user">{$usuario['email']}</span></li>
-            {/if}
-            {if $usuario['fk_rol']==1}
+
             <li role="presentation"><a href=# id="admin">Administración</a></li>
-            {/if}
+            
           </ul>
         </nav>
         <div class="col-xs-12 col-md-12" id="cargadorAjax">

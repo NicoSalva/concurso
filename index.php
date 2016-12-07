@@ -1,12 +1,10 @@
 <?php
 
-require('controlador/AdminController.php');
+require('controlador/ConcursoController.php');
 require('config/ConfigApp.php');
 
 
-  $adminController = new AdminController();
-  $adminController->iniciar();
-
-
+  $concursoController = new ConcursoController();
+  $concursoController->iniciar();
 
  ?>
