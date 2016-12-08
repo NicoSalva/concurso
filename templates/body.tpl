@@ -5,11 +5,12 @@
         <header class="col-xs-12 col-md-12">
           <h1>Sistema Concurso Docente Facultad De Ciencias Veterinarias</h1>
         </header>
+        
         <nav class="col-xs-12 col-md-12 navegadora">
           <ul class="nav nav-pills">
-            <li role="presentation"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
+            <li role="presentation"><a href="#">Docentes</a></li>
+            <li role="presentation"><a href="#">Concursos</a></li>
+            <li role="presentation"><a href="#">Salir</a></li>
           </ul>
         </nav>
         <div class="col-xs-12 col-md-12" id="cargadorAjax">

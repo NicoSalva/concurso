@@ -17,7 +17,7 @@ font-weight: bold;
 }
 
 a:hover{
-  color:#5c053f;
+  color:inherit;
 }
 
 a:visited{
@@ -31,7 +31,7 @@ a:link{
 }
 
 .active{
-  background-color: #5c053f;
+  background-color: green;
 }
 
 header{
