@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-12-2016 a las 16:10:51
+-- Tiempo de generación: 09-12-2016 a las 11:31:52
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 7.0.9
 
@@ -33,6 +33,17 @@ CREATE TABLE `persona` (
   `area` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `persona`
+--
+
+INSERT INTO `persona` (`id_persona`, `nombre`, `email`, `area`) VALUES
+(1, 'Nico', 'esaaa@gmail', 'todas'),
+(2, 'Roberto', 'Roberto@gmail', 'produccion anim'),
+(3, 'Alejandra', 'Alejandra@gmail', 'area informatic'),
+(4, 'Gustavo', 'Gustavo@gmail', 'area informatic'),
+(5, 'Cecilia', 'Cecilia@gmail.com', 'Decanato');
+
 -- --------------------------------------------------------
 
 --
@@ -44,6 +55,17 @@ CREATE TABLE `rol` (
   `fk_rol` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `rol`
+--
+
+INSERT INTO `rol` (`id_persona`, `fk_rol`) VALUES
+(1, 0),
+(2, 1),
+(2, 0),
+(3, 0),
+(4, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -54,6 +76,15 @@ CREATE TABLE `roles` (
   `id_rol` int(11) NOT NULL,
   `descripcion` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `roles`
+--
+
+INSERT INTO `roles` (`id_rol`, `descripcion`) VALUES
+(0, 'Administrador'),
+(1, 'Evaluador'),
+(2, 'Docente');
 
 --
 -- Índices para tablas volcadas
@@ -73,7 +104,7 @@ ALTER TABLE `persona`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id_persona` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_persona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
