@@ -11,13 +11,16 @@ class ConcursoView
   }
 
   function mostrar () {
-    //$this->smarty->assign('usuario',$usuario);
     $this->smarty->display('index.tpl');
   }
 
+
+
+
+
   function mostrarPersonas($personas){
-    $this->smarty->assign('persona',$personas);
-    $this->smarty->display('index.tpl');
+    $this->smarty->assign('personas',$personas);
+    $this->smarty->display('personas.tpl');
   }
 }
  ?>

@@ -6,16 +6,24 @@ require('config/ConfigApp.php');
 
 
 
-  if (!array_key_exists(ConfigApp::$ACTION,$_REQUEST)){
+
+
     $concursoController = new ConcursoController();
-    $concursoController->iniciar();
-  die();
-}
+    //$concursoController->iniciar();
+
+
 
 switch ($_REQUEST[ConfigApp::$ACTION]) {
   case ConfigApp::$ACTION_MOSTRAR_PERSONAS:
   $concursoController->mostrarPersonas();
   break;
+//switch ($_REQUEST[ConfigApp::$ACTION]) {
+//  case ConfigApp::$ACTION_MOSTRAR_PERSONAS:
+//  $concursoController->mostrarPersonas();
+//  break;
+//}
+default:
+  $concursoController->iniciar();
+  break;
 }
-
  ?>

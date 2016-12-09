@@ -8,9 +8,9 @@
 
         <nav class="col-xs-12 col-md-12 navegadora">
           <ul class="nav nav-pills">
-            <li role="presentation"><a href=# id="personas">Personas</a></li>
-            <li role="presentation"><a href=# id="concursos">Concursos</a></li>
-            <li role="presentation"><a href=# id="logout">Salir</a></li>
+            <li role="presentation"><a href="mostrar_personas" class="nav-link" >Personas</a></li>
+            <li role="presentation"><a href=# class="nav-link">Concursos</a></li>
+            <li role="presentation"><a href=# class="nav-link">Salir</a></li>
           </ul>
         </nav>
         <div class="col-xs-12 col-md-12" id="cargadorAjax">
