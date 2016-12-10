@@ -1,7 +1,11 @@
+<div class="contenedorPersonas col-md-6">
 {foreach from=$personas key=index item=persona}
-<p>{$persona['id_persona']}</p>
-<p>{$persona['nombre']}</p>
-<p>{$persona['email']}</p>
-<p>{$persona['area']}</p>
-<br><br>
+<div class="list-group col-md-6">
+  <a id="nombrePersona"href="#" class="list-group-item active">
+    {$persona['nombre']}
+  </a>
+  <a href="#" class="list-group-item detallesPersona"><p>{$persona['email']}</p></a>
+  <a href="#" class="list-group-item detallesPersona"><p>{$persona['area']}</p></a>
+</div>
 {/foreach}
+</div>

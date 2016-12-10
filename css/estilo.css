@@ -10,9 +10,25 @@ h1{
   margin-top: 10%;
   margin-bottom: 1%;
 }
-a{
+
+p{
+  color: black;
+  border-style: none;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.contenedorPersonas{
+  margin-top: 2%;
+  height: auto;
+}
+
+#nombrePersona{
   color: white;
-font-weight: bold;
+  background-color: grey;
+}
+
+.detallesPersona{
 
 }
 
